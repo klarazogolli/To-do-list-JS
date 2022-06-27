@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <title>To Do List</title>
+    <style>
+        .buttons {
+            float: right;
+            font-size: 20px;
+        }
+
+        .collection-item {
+            background-color: #fff7eb !important;
+        }
+
+        #clear-item {
+            background-color: #ee6e73;
+            margin-bottom: 10px;
+            border-radius: 30px;
+            box-shadow: none;
+        }
+
+        #add-item {
+            color: #fff;
+            background-color: #ee6e73;
+            border-radius: 30px;
+            box-shadow: none;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Nav bar -->
+    <nav style="font-family: emoji; box-shadow: none; margin: auto; width: 50%;">
+        <div class="container">
+            <a href="#" class="brand-logo center ">To Do List</a>
+        </div>
+    </nav>
+    <!-- container -->
+    <div class="" style="width: 50%; margin: auto; background-color: antiquewhite;">
+        <div class="container">
+            <form action="" style="margin-left: 25%;">
+                <input id="user-input" type="text" placeholder="Name.."
+                    style="display:inline-block; width:50%; margin: 20px; text-align: center;">
+                <button id="add-item" class="waves-effect waves-light btn">Add item </button>
+            </form>
+        </div>
+        <!-- Item List -->
+        <ul id="item-list" class="collection">
+
+            <!-- <li class="collection-item" id="item-0">
+                <strong>Veze: </strong>
+                <div class="buttons">
+                    <a href="#">
+                        <i class="fa fa-check-circle-o" style="color:#a4f5c8;;"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa fa-pencil-square-o" style="color:#96c9fb;"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa fa-minus-circle" style="color: #ff2c07;"></i>
+                    </a>
+                </div>
+            </li> -->
+
+            <!-- <li class="collection-item" id="item-0">
+                <strong>Buke: </strong>
+                <div class="buttons">
+                    <a href="#">
+                        <i class="fa fa-check-circle-o" style="color:#a4f5c8;;"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa fa-pencil-square-o" style="color:#96c9fb;"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa fa-minus-circle" style="color: #ff2c07;"></i>
+                    </a>
+                </div>
+            </li> -->
+            <!-- <li class="collection-item" id="item-0">
+                <strong>Qumesht:</strong>
+                <div class="buttons">
+                    <a href="#">
+                        <i class="fa fa-check-circle-o" style="color: #a4f5c8;;"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa fa-pencil-square-o" style="color:#96c9fb;"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa fa-minus-circle" style="color: #ff2c07;"></i>
+                    </a>
+                </div>
+            </li> -->
+        </ul>
+        <div class="clear-btn" style="text-align: center;">
+            <button id="clear-item" class="waves-effect waves-light btn">Clear items </button>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
